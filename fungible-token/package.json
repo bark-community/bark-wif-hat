@@ -1,0 +1,28 @@
+{
+  "name": "fungible-token",
+  "version": "1.0.0",
+  "description": "The BARK (BFT) Fungible Token is a digital asset built on the Solana blockchain, representing a fungible form of value within the BARK ecosystem. Unlike non-fungible tokens (NFTs) which are unique and indivisible, BFT tokens are interchangeable and identical, allowing for easy exchange and use in various transactions.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "mint-bark-nft": "node-ts src/mint.ts",
+    "generate-keypairs": "node-ts ./wallet.ts",
+    "test-mint-nft": "node-ts ./mpl_token22.ts",
+    "test-mint-spl": "node-ts ./spl_token22.ts "
+  },
+  "keywords": [],
+  "author": "BARK Protocol",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "@metaplex-foundation/umi-bundle-defaults": "^0.20.1",
+    "@metaplex-foundation/umi": "0.9.1",
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/spl-token": "^0.4.3",
+    "@solana/web3.js": "^1.91.1",
+    "@solana/spl-token-metadata": "^0.1.2",
+    "bs58": "^5.0.0",
+    "node-ts": "6.0.1",
+    "typescript": "5.4.3"
+  }
+}

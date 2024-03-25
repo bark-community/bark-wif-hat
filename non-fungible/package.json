@@ -1,0 +1,28 @@
+{
+  "name": "bark-wif-hat",
+  "version": "1.0.0",
+  "description": "BARK WIF HAT (BWIF) is a collection of unique digital artworks in the form of Non-Fungible Tokens (NFTs) featuring adorable bulldogs wearing various stylish hats. Each NFT in the series showcases a different dog breed sporting a distinct hat, ranging from classic fedoras to funky baseball caps and everything in between.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "mint-bark-nft": "node-ts src/mint.ts",
+    "generate-keypairs": "node-ts ./wallet.ts",
+    "test-mint-nft": "node-ts ./mpl_token22.ts",
+    "test-mint-spl": "node-ts ./spl_token22.ts "
+  },
+  "keywords": [],
+  "author": "BARK Protocol",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "@metaplex-foundation/umi-bundle-defaults": "^0.20.1",
+    "@metaplex-foundation/umi": "0.9.1",
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/spl-token": "^0.4.3",
+    "@solana/web3.js": "^1.91.1",
+    "@solana/spl-token-metadata": "^0.1.2",
+    "bs58": "^5.0.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.3"
+  }
+}
